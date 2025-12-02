@@ -1,0 +1,17 @@
+{
+  "name":" CENTRA TESTNET #34",
+  "description": "CENTRA TESTNET NFT",
+  "external_url": "https://centralized.club",
+  "image": "ipfs://QmQxY2vrggEkW4v1upJjMZJYorWMz5xTKu9TfQ153AjaZA/34.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Shape 49"
+    },
+    {
+      "trait_type": "number",
+      "value": 934,
+      "display_type": "number"
+    }
+  ]
+}

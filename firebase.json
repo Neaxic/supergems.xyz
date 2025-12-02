@@ -1,0 +1,22 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "extensions": {
+    "moralis-streams-1zc0": "moralis/moralis-streams@0.1.8",
+    "moralis-streams": "moralis/moralis-streams@0.1.16"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ]
+}

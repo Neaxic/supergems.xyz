@@ -1,0 +1,68 @@
+import { cookies } from "next/headers"
+import { Mail } from "@/components/mail"
+import { PromtInstaller } from "@/components/PromtInstaller"
+// import { PushNotificationManager } from "@/components/PushNotificationManager"
+// import { AccountSwitcher } from "@/components/account-switcher"
+import { ScrollArea } from "@/components/ui/scroll-area"
+import { SimpleMarqueeBar } from "@/components/simple-marquee-bar"
+import { MobileMailLayout } from "@/components/mobile-mail-layout"
+// import { PushNotificationManager } from "@/components/PushNotificationManager"
+// import { SignNounceButton } from "@/components/SignNounceButton"
+// import { ThemePickerButton } from "@/components/ThemePickerButton"
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+    const layout = cookies().get("react-resizable-panels:layout:mail")
+    const collapsed = cookies().get("react-resizable-panels:collapsed")
+    const collapsedChat = cookies().get("react-resizable-panels-chat:collapsed")
+
+    const defaultLayout = layout ? JSON.parse(layout.value) : undefined
+    const defaultCollapsed = collapsed ? JSON.parse(collapsed.value) : undefined
+    const defaultCollapsedChat = collapsedChat ? JSON.parse(collapsedChat.value) : undefined
+
+    return (
+        <>
+            <div className="md:hidden">
+                <MobileMailLayout>
+                    <ScrollArea>
+                        <div className="h-screen">
+                            <div className="grid gap-4 md:gap-6">
+                                {children}
+                            </div>
+                        </div>
+                    </ScrollArea>
+                </MobileMailLayout>
+                {/* <PushNotificationManager />
+                <AccountSwitcher /> */}
+            </div>
+            <div className="max-h-screen hidden h-screen overflow-hidden flex-col md:flex">
+                <PromtInstaller />
+                <SimpleMarqueeBar />
+                <Mail
+                    defaultLayout={defaultLayout}
+                    defaultCollapsed={defaultCollapsed}
+                    defaultCollapsedChat={defaultCollapsedChat}
+                    navCollapsedSize={4}
+                    disableRightBar={false}
+                >
+                    <main className="flex-1 ">
+
+                        <ScrollArea>
+                            <div className="h-screen">
+                                <div className="grid gap-4 md:gap-6">
+                                    {children}
+                                </div>
+                            </div>
+                        </ScrollArea>
+                    </main>
+                </Mail>
+
+                {/* <ConnectButton /> */}
+                {/* <SignNounceButton /> */}
+
+                {/* <PushNotificationManager />
+                <ThemePickerButton />
+                <PromtInstaller /> */}
+            </div>
+        </>
+    )
+}
