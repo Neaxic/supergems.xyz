@@ -1,15 +1,10 @@
 # an idea
 ![alt text](image-1.png)
-https://x.com/1CYETH/status/1995963386459554021
-https://x.com/i/status/1995963386459554021
-
 [text](https://x.com/1CYETH/status/1855794103407055125)
 ![alt text](image.png)
 
-![alt text](image-2.png)
-
 An idea long underway. This is an old as fuck repo, and an old as fuck project.
-I spent a half year-ish developing this after my degree – ended up getting a job in a very contradicting field, and had to disband this project.
+I spent a half year-ish developing this after my degree – ended up getting a job in a very contradicting field, and had to disband and shut this project completely down as a requirement.
 
 I still like to believe that this could be a product one day, as I think the problem it's trying to solve still exists.
 
