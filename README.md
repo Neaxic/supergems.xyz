@@ -47,4 +47,3 @@ To give a quick rundown of what this code contains:
 I imagine it could be hard to set up from scratch
 
 Also when i made chatgpt fix typos, it said i had a "honest and raw tone", and it liked it, and i like that it liked it
-Also said i undersold myself hugely in this text, considering the repo contents, emoji with sunglasses.
