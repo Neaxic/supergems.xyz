@@ -16,7 +16,7 @@ At the point of publishing the repo, I went through and removed secrets, and a h
 
 Features (as I remember them lol)
 - Live trading p2p in a live UX (includes creating / joining rooms, chatting in said rooms, trade estimations, etc.)
-- An async trading protocol that allows for ERC712, ERC20, ERC1155 trading
+- An async trading protocol that allows for ERC712, ERC20, ERC1155 trading on Ethereum & other ETH L2
 - Collection-based offer trades
 - Rarity indexes, and aggregated FP per NFT
 - Profile pages, comments, “REP”, user customizations
